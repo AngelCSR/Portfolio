@@ -1,5 +1,11 @@
 # UT 1: GitHub y MarkDown
-Una introducción   a GitHub, como crear repositorios, crear archivos o subirlos, ver los archivos y commits, crear y administrar ramas y como gestionar la configuracion y archivos
+
+## Introducción
+
+GitHub es una plataforma de desarrollo colaborativo que utiliza Git como sistema de control de versiones. Permite a los desarrolladores gestionar proyectos, colaborar en código, llevar un seguimiento de cambios, y automatizar flujos de trabajo. Es ampliamente utilizado para proyectos de software, pero también para documentación, diseño y más.
+
+En este informe se describirán las funciones principales de GitHub y los pasos necesarios para realizar acciones comunes como crear repositorios, gestionar ramas, hacer pull requests, y colaborar con otros usuarios.
+
 ## Crear un nuevo repositorio:
 Para crear un nuevo repositorio vamos a nuestros repositorios y seleccionamos la opción de new para crear un nuevo repositorio, le ponemos nombre, una descripción , seleccionamos la opción de repositorio publico y marcamos la opción "Initialize this repository with a README" para crear un archivo README inicial.Despues le damos a Create repository.
 
