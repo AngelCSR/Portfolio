@@ -16,5 +16,5 @@ Lo que menos me ha gustado es que la interfaz web no permite realizar ciertas op
 
 ## Qué más me gustaría saber relacionado con la Unidad habiendo hecho este ejercicio
 
-Me gustaría profundizar en cómo resolver conflictos de merge de forma práctica y entender mejor las estrategias para el trabajo colaborativo en proyectos grandes, como el uso de branches para diferentes entornos o funcionalidades. Además, me interesa aprender a automatizar procesos en GitHub usando GitHub Actions para optimizar el flujo de trabajo.
+Me gustaría profundizar en cómo resolver conflictos de merge de forma práctica(porque a veces si da conflicto por pequeño que sea no te deja hacer el merge) y entender mejor las estrategias para el trabajo colaborativo en proyectos grandes, como el uso de branches para diferentes entornos o funcionalidades. Además, me interesa aprender a automatizar procesos en GitHub usando GitHub Actions para optimizar el flujo de trabajo.
 
