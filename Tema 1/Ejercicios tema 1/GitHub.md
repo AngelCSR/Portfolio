@@ -4,3 +4,5 @@ Una introducción   a GitHub, como crear repositorios, crear archivos o subirlos
 Para crear un nuevo repositorio vamos a nuestros repositorios y seleccionamos la opción de new para crear un nuevo repositorio, le ponemos nombre, una descripción , seleccionamos la opción de repositorio publico y marcamos la opción "Initialize this repository with a README" para crear un archivo README inicial.Despues le damos a Create repository.
 
 ![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/image.png)
+
+![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/captura2.png)
