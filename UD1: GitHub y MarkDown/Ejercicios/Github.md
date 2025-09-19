@@ -8,6 +8,12 @@ GitHub es una plataforma de desarrollo colaborativo que utiliza Git como sistema
 
 En este informe se describirán las funciones principales de GitHub y los pasos necesarios para realizar acciones comunes como crear repositorios, gestionar ramas, hacer pull requests, y colaborar con otros usuarios.
 
+## Inicirmos sesión
+
+Al tener una cuenta ya creada, accedemos directamente a esa cuenta
+
+![captura]()
+
 ## Crear un nuevo repositorio:
 Para crear un nuevo repositorio vamos a nuestros repositorios y seleccionamos la opción de new para crear un nuevo repositorio, le ponemos nombre, una descripción , seleccionamos la opción de repositorio publico y marcamos la opción "Initialize this repository with a README" para crear un archivo README inicial.Despues le damos a Create repository.
 
