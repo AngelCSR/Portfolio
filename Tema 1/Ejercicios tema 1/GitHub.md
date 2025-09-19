@@ -76,3 +76,7 @@ en tu repositorio. Ellos podrán tener acceso para hacer cambios,
 dependiendo de los permisos que les concedamos.
 
 ![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/captura15.png)
+
+## Conclusiones
+
+GitHub es una herramienta esencial para la gestión de proyectos de desarrollo, ofreciendo un entorno estructurado para la colaboración y control de versiones. Entender sus funciones básicas como repositorios, ramas, y pull requests permite a los equipos trabajar de manera eficiente y ordenada.
