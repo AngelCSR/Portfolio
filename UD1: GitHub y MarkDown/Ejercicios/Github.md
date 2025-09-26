@@ -10,6 +10,9 @@ En este informe se describirán las funciones principales de GitHub y los pasos 
 
 ## Iniciamos sesión
 
+Para poder trabajar en GitHub es necesario iniciar sesión con nuestra cuenta personal. Al hacerlo, GitHub valida nuestras credenciales y nos da acceso a nuestro panel de usuario, donde aparecen nuestros repositorios, proyectos y actividad.
+Este paso es imprescindible porque todas las acciones (crear repositorios, subir archivos, realizar cambios, etc.) quedarán asociadas a nuestra cuenta.
+
 Al tener una cuenta ya creada, accedemos directamente a esa cuenta
 
 ![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/capturaIni.png)
@@ -29,10 +32,17 @@ Vemos el resultado:
 ## Subir archivos a tu repositorio
 
 En la página del repositorio, haz clic en el botón "Add file" que se encuentra justo encima de la lista de archivos, y selecciona "Upload files".
+Para añadir archivos, hacemos clic en el botón Add file y seleccionamos Upload files. Al hacerlo:
+
+
 
 ![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/captura4.png)
 
-Subimos el archivo y hacemos el commit en la rama principal
+Seleccionamos el archivo en nuestro ordenador.
+
+Escribimos un mensaje de confirmación (commit message) que describa los cambios.
+
+Hacemos clic en Commit changes.
 
 ![Captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/captura5.png)
 
@@ -53,6 +63,9 @@ En la página principal de tu repositorio, haz clic en el menú desplegable "mai
 ![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/captura9.png)
 
 ### Hacer cambios en una rama:
+
+Una vez creada la rama, podemos editar archivos, añadir nuevos o modificar los existentes.
+Es importante destacar que los cambios en esa rama no afectan a la rama principal (main) hasta que se fusionen.
 
 ![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/captura10.png)
 
