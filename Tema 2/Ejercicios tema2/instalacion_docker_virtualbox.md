@@ -19,7 +19,11 @@ A continuación se describen los pasos seguidos:
 2. Seleccionar el idioma, zona horaria y crear el usuario principal.
 
 ### Configuración inicial del sistema
-- Completar la instalación, reiniciar la máquina y realizar las **actualizaciones iniciales**.
+- Completar la instalación.
+
+
+![foto1](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto1.png)
+
 
 ---
 
@@ -29,47 +33,59 @@ Una vez instalado Ubuntu, se procedió a la instalación de **Docker Desktop**, 
 El proceso se desarrolló en varios pasos:
 
 ### Desinstalar versiones antiguas (si las hay)
+En este cas no las hay, pero lo hacemos.
 ```bash
 sudo apt remove docker docker-engine docker.io containerd runc
 ```
-
+![foto2](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto2.png)
 ### Actualizar los paquetes del sistema
 ```bash
 sudo apt update
 sudo apt upgrade -y
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto3.png)
 
+
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto4.png)
 ### Instalar dependencias necesarias
 ```bash
 sudo apt install -y ca-certificates curl gnupg lsb-release
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto5.png)
 
 ### Agregar la clave GPG oficial de Docker
 ```bash
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto6.png)
+
 
 ### Agregar el repositorio oficial de Docker
 ```bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto7.png)
 
 ### Instalar Docker Engine, CLI y containerd
 ```bash
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto9.png)
 
 ### Verificar la instalación
 ```bash
 sudo docker run hello-world
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto10.png)
 
 Si la instalación fue exitosa, se mostrará un mensaje de confirmación.
 
 ### Ejecutar Docker sin sudo
 Se configura el usuario actual para usar Docker sin privilegios de administrador.
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto11.png)
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto12.png)
 
 ---
 
@@ -83,23 +99,31 @@ En este caso, se usaron **Nginx** (servidor web) y **Tomcat** (servidor de aplic
 docker search nginx
 docker search tomcat
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto13.png)
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto14.png)
 
 ### Descargar e iniciar los contenedores
 ```bash
 docker run -d -p 8080:80 --name webserver nginx
 docker run -d -p 8081:8080 --name appserver tomcat
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto15.png)
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto16.png)
 
 ### Verificar contenedores activos
 ```bash
 docker ps
 ```
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto17.png)
+
 
 ### Probar los servicios en el navegador
 - **http://localhost:8080** → Servidor web **Nginx**
 - **http://localhost:8081** → Servidor de aplicaciones **Tomcat**
 
 ---
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto18.png)
+![foto](https://github.com/AngelCSR/Portfolio/blob/main/Tema%202/imagenes/foto19.png)
 
 # 4. Requerimientos mínimos para implantar una aplicación web
 
@@ -146,7 +170,7 @@ Durante este proceso, se aprendió a:
 - Crear contenedores para servidores web y de aplicaciones.
 - Comprender los requisitos y buenas prácticas para desplegar aplicaciones web.
 
-Esto sienta las bases para la **administración moderna de infraestructuras basadas en contenedores**.
+
 
 ---
 
