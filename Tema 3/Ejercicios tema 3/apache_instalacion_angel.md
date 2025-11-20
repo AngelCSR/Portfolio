@@ -96,7 +96,8 @@ Para comprobar que el servicio está activo y en ejecución:
 ```bash
 hostname -I
 ```
-imagen 1
+![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/capturaIni.png)
+
 Y acceder a `http://localhost` para confirmar la página de bienvenida.
 imagen 2
 
