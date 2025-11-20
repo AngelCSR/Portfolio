@@ -92,10 +92,13 @@ sudo apt install apache2 -y
 ```
 
 ### 🔸 3. Verificar la instalación
+Para comprobar que el servicio está activo y en ejecución:
 ```bash
 hostname -I
 ```
+imagen 1
 Y acceder a `http://localhost` para confirmar la página de bienvenida.
+imagen 2
 
 ### 🔸 4. Configurar el usuario y grupo de Apache
 ```bash
