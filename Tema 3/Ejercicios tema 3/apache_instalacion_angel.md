@@ -96,10 +96,10 @@ Para comprobar que el servicio está activo y en ejecución:
 ```bash
 hostname -I
 ```
-![captura](https://raw.githubusercontent.com/AngelCSR/Portfolio/refs/heads/main/Tema%201/Imagenes/capturaIni.png)
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto1.png)
 
 Y acceder a `http://localhost` para confirmar la página de bienvenida.
-imagen 2
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto2.png)
 
 ### 🔸 4. Configurar el usuario y grupo de Apache
 ```bash
