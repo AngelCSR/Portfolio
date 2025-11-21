@@ -2,46 +2,52 @@
 
 ## 📑 ÍNDICE
 
-1. 🏫 **Introducción**  
- 1.1 📍 Contexto  
- 1.2 🎯 Motivación  
+1. 🏫 **Introducción**
 
-2. ⚙️ **Configuración inicial del servidor**  
- 2.1 Actualizar el sistema  
- 2.2 Instalar Apache 2  
- 2.3 Verificar la instalación  
- 2.4 Configurar el usuario y grupo de Apache  
- 2.5 Configurar el directorio raíz  
- 2.6 Habilitar módulos de Apache  
- 2.7 Establecer permisos del directorio  
- 2.8 Reiniciar Apache  
- 2.9 Comprobación de estado del servicio  
+   * [📍 Contexto](#contexto)
+   * [🎯 Motivación](#motivacion)
 
-3. 🌐 **Creación de una página web personalizada**  
- 3.1 Eliminación de la página predeterminada  
- 3.2 Creación del nuevo archivo `index.html`  
- 3.3 Prueba en el navegador  
+2. ⚙️ **Configuración inicial del servidor**
 
-4. 🧩 **Configuración de un Virtual Host**  
- 4.1 Acceso al directorio de configuración  
- 4.2 Copia de la configuración por defecto  
- 4.3 Creación del archivo `miweb.local.conf`  
- 4.4 Definición de directivas (ServerAdmin, DocumentRoot, ServerName)  
- 4.5 Activación del Virtual Host  
- 4.6 Modificación del archivo `/etc/hosts`  
- 4.7 Pruebas de acceso  
+   * [Actualizar el sistema](#1-actualizar-el-sistema)
+   * [Instalar Apache 2](#2-instalar-apache-2)
+   * [Verificar la instalación](#3-verificar-la-instalacion)
+   * [Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
+   * [Configurar el directorio raíz](#5-configurar-el-directorio-raiz)
+   * [Habilitar módulos de Apache](#6-habilitar-modulos-de-apache)
+   * [Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
+   * [Reiniciar Apache](#8-reiniciar-apache)
+   * [Comprobación de estado del servicio](#9-comprobacion-apache)
 
-5. 🔐 **Implementación adicional: Control de acceso**  
- 5.1 Activación de `.htaccess`  
- 5.2 Creación del archivo `.htpasswd`  
- 5.3 Configuración del archivo `.htaccess`  
- 5.4 Reinicio del servicio Apache  
- 5.5 Banco de pruebas  
+3. 🌐 **Creación de una página web personalizada**
 
-6. 📊 **Resultados y valoración**  
- 6.1 Resultados obtenidos  
- 6.2 Valoración técnica  
- 6.3 Valoración personal  
+   * [Eliminación de la página predeterminada](#1-eliminacion-de-la-pagina-predeterminada)
+   * [Creación del nuevo archivo `index.html`](#2-creacion-del-nuevo-archivo-indexhtml)
+   * [Prueba en el navegador](#3-prueba-en-el-navegador)
+
+4. 🧩 **Configuración de un Virtual Host**
+
+   * [Acceso al directorio de configuración](#1-acceso-al-directorio-de-configuracion)
+   * [Copia de la configuración por defecto](#2-copia-de-la-configuracion-por-defecto)
+   * [Creación del archivo `miweb.local.conf`](#3-creacion-del-archivo-miweblocalconf)
+   * [Definición de directivas (ServerAdmin, DocumentRoot, ServerName)](#4-definicion-de-directivas-serveradmin-documentroot-servername)
+   * [Activación del Virtual Host](#5-activacion-del-virtual-host)
+   * [Modificación del archivo `/etc/hosts`](#6-modificacion-del-archivo-etchosts)
+   * [Pruebas de acceso](#7-pruebas-de-acceso)
+
+5. 🔐 **Implementación adicional: Control de acceso**
+
+   * [Activación de `.htaccess`](#1-activacion-de-htaccess)
+   * [Creación del archivo `.htpasswd`](#2-creacion-del-archivo-htpasswd)
+   * [Configuración del archivo `.htaccess`](#3-configuracion-del-archivo-htaccess)
+   * [Reinicio del servicio Apache](#4-reinicio-del-servicio-apache)
+   * [Banco de pruebas](#5-banco-de-pruebas)
+
+6. 📊 **Resultados y valoración**
+
+   * [Resultados obtenidos](#1-resultados-obtenidos)
+   * [Valoración técnica](#2-valoracion-tecnica)
+   * [Valoración personal](#3-valoracion-personal)
 
 7. 🧩 **Conclusión**
 
