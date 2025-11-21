@@ -144,7 +144,7 @@ sudo systemctl restart apache2
 ```bash
 sudo systemctl status apache2
 ```
-imagen3
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto3.png)
 
 ---
 
@@ -161,9 +161,12 @@ sudo rm index.html
 ```
 
 3. Creamos nuestro propio `index.html`:
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto4.png)
+
 ```bash
 sudo nano index.html
 ```
+
 
 4. Contenido personalizado:
 ```html
@@ -176,18 +179,25 @@ sudo nano index.html
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to right, #74ebd5, #ACB6E5);
-            text-align: center;
-            padding-top: 100px;
-            color: #fff;
+             text-align: center;
+             padding-top: 100px;
+             animation: fadeIn 2s ease-in;
+             color: #fff;
         }
         h1 {
+            color: #ffffff;
             font-size: 3em;
+            margin-bottom: 20px;
             text-shadow: 2px 2px #2e86de;
         }
         p {
             font-size: 1.2em;
             color: #f0f0f0;
         }
+        .emoji {
+             font-size: 2em;
+             animation: bounce 1.5s infinite;
+         }
     </style>
 </head>
 <body>
@@ -196,11 +206,16 @@ sudo nano index.html
 </body>
 </html>
 ```
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto5.png)
 
 Abrimos en el navegador:  
 👉 `http://localhost`
 
 ---
+Si todo está correcto, se mostrará la página personalizada.
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto6.png)
+
+
 
 ## 🧩 3. Configuración de un Virtual Host
 
@@ -208,6 +223,9 @@ Abrimos en el navegador:
 ```bash
 cd /etc/apache2/sites-available/
 ```
+       
+Desde aquí se gestionan los diferentes Virtual Hosts que Apache puede servir.
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/fotoo.png)
 
 2. Copiamos la configuración base:
 ```bash
@@ -225,6 +243,7 @@ ServerAdmin angelcamposanchezrey@gmail.com
 DocumentRoot /var/www/gci/
 ServerName gci.example.com
 ```
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto7.png)
 
 4. Creamos el directorio raíz:
 ```bash
@@ -234,19 +253,40 @@ sudo chown -R angel:angel /var/www/gci
 
 ---
 
+
 ## 🔐 4. Activación del archivo VirtualHost
 
 ```bash
 sudo a2ensite gci.conf
+```
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto8.png)
+
+```bash
+
 sudo systemctl reload apache2
 ```
+No funciona
 
-Si da error, editar `/etc/hosts`:
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto9.png)
+
+
+Editamos `/etc/hosts`:
 ```
 127.0.0.1   localhost
 127.0.1.1   angel-VirtualBox
 127.0.0.1   gci.example.com
 ```
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto10.png)
+
+El archivo /etc/hosts permite asociar nombres de dominio locales con direcciones IP.
+Al añadir:
+
+    127.0.0.1   gci.example.com
+
+
+le estamos diciendo al sistema que cada vez que se escriba http://gci.example.com en el navegador, apunte a la IP local (tu servidor Apache en el propio equipo).
+
+
 
 Reiniciar Apache:
 ```bash
@@ -257,6 +297,9 @@ Y probar:
 👉 `http://gci.example.com`
 
 ---
+Funciona!
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/fotogit.png)
+
 
 ## 🔐 5. Implementación adicional: Control de acceso
 
@@ -280,6 +323,9 @@ sudo systemctl restart apache2
 
 4. Probar el acceso desde otro equipo en la red.  
 Solo los usuarios definidos en `.htpasswd` podrán entrar.
+    1. Acceso desde otro ordenador de la red local, un compañero (Diego)realizó un intento de acceso desde otro equipo para confirmar la disponibilidad y el correcto           funcionamiento del control de acceso.
+    2.  (http://gci.example.com) o .(http://gci.example2.com)(otra sencilla que he hecho)
+    3. Verificación de autenticación: se comprobó que el acceso solo se permite tras introducir usuario y contraseña válidos.
 
 **Ver logs:**
 ```bash
@@ -288,6 +334,8 @@ sudo tail -f /var/log/apache2/error.log
 ```
 
 ---
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto12.png)
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto13.png)
 
 ## 📊 6. Resultados y valoración
 
@@ -298,11 +346,11 @@ sudo tail -f /var/log/apache2/error.log
 - Control de acceso implementado.  
 
 **Valoración técnica:**  
-El proceso fue fluido y permitió comprender a fondo la configuración de Apache en Ubuntu.
+El proceso fue fluido, aunque con algunos errores, y permitió comprender a fondo la configuración de Apache en Ubuntu.
 
 **Valoración personal:**  
 Fue una práctica muy completa.  
-Los problemas menores de permisos se solucionaron con `chown`.  
+Los problemas menores de permisos se solucionaron.  
 La parte de seguridad fue especialmente interesante.
 
 ---
