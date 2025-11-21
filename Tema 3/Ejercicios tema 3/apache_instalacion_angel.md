@@ -2,56 +2,56 @@
 
 ## 📑 ÍNDICE
 
-1. 🏫 **Introducción**
+1. 🏫 Introducción
 
-   * [📍 Contexto](#contexto)
-   * [🎯 Motivación](#motivacion)
+   * [Contexto](#contexto)
+   * [Motivación](#motivacion)
 
-2. ⚙️ **Configuración inicial del servidor**
+2. ⚙️ Configuración inicial del servidor
 
-   * [Actualizar el sistema](#1-actualizar-el-sistema)
-   * [Instalar Apache 2](#2-instalar-apache-2)
-   * [Verificar la instalación](#3-verificar-la-instalacion)
-   * [Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
-   * [Configurar el directorio raíz](#5-configurar-el-directorio-raiz)
-   * [Habilitar módulos de Apache](#6-habilitar-modulos-de-apache)
-   * [Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
-   * [Reiniciar Apache](#8-reiniciar-apache)
-   * [Comprobación de estado del servicio](#9-comprobacion-apache)
+   * [1 Actualizar el sistema](#1-actualizar-el-sistema)
+   * [2 Instalar Apache 2](#2-instalar-apache-2)
+   * [3 Verificar la instalación](#3-verificar-la-instalacion)
+   * [4 Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
+   * [5 Configurar el directorio raíz](#5-configurar-el-directorio-raiz)
+   * [6 Habilitar módulos de Apache](#6-habilitar-modulos-de-apache)
+   * [7 Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
+   * [8 Reiniciar Apache](#8-reiniciar-apache)
+   * [9 Comprobación Apache](#9-comprobacion-apache)
 
-3. 🌐 **Creación de una página web personalizada**
+3. 🌐 Creación de una página web personalizada
 
-   * [Eliminación de la página predeterminada](#1-eliminacion-de-la-pagina-predeterminada)
-   * [Creación del nuevo archivo `index.html`](#2-creacion-del-nuevo-archivo-indexhtml)
-   * [Prueba en el navegador](#3-prueba-en-el-navegador)
+   * [Eliminación de la página predeterminada](#eliminacion-de-la-pagina-predeterminada)
+   * [Creación del nuevo archivo index.html](#creacion-del-nuevo-archivo-indexhtml)
+   * [Prueba en el navegador](#prueba-en-el-navegador)
 
-4. 🧩 **Configuración de un Virtual Host**
+4. 🧩 Configuración de un Virtual Host
 
-   * [Acceso al directorio de configuración](#1-acceso-al-directorio-de-configuracion)
-   * [Copia de la configuración por defecto](#2-copia-de-la-configuracion-por-defecto)
-   * [Creación del archivo `miweb.local.conf`](#3-creacion-del-archivo-miweblocalconf)
-   * [Definición de directivas (ServerAdmin, DocumentRoot, ServerName)](#4-definicion-de-directivas-serveradmin-documentroot-servername)
-   * [Activación del Virtual Host](#5-activacion-del-virtual-host)
-   * [Modificación del archivo `/etc/hosts`](#6-modificacion-del-archivo-etchosts)
-   * [Pruebas de acceso](#7-pruebas-de-acceso)
+   * [Acceso al directorio de configuración](#acceso-al-directorio-de-configuracion)
+   * [Copia de la configuración por defecto](#copia-de-la-configuracion-por-defecto)
+   * [Creación del archivo miweb.local.conf](#creacion-del-archivo-miweblocalconf)
+   * [Definición de directivas (ServerAdmin, DocumentRoot, ServerName)](#definicion-de-directivas-serveradmin-documentroot-servername)
+   * [Activación del Virtual Host](#activacion-del-virtual-host)
+   * [Modificación del archivo /etc/hosts](#modificacion-del-archivo-etchosts)
+   * [Pruebas de acceso](#pruebas-de-acceso)
 
-5. 🔐 **Implementación adicional: Control de acceso**
+5. 🔐 Implementación adicional: Control de acceso
 
-   * [Activación de `.htaccess`](#1-activacion-de-htaccess)
-   * [Creación del archivo `.htpasswd`](#2-creacion-del-archivo-htpasswd)
-   * [Configuración del archivo `.htaccess`](#3-configuracion-del-archivo-htaccess)
-   * [Reinicio del servicio Apache](#4-reinicio-del-servicio-apache)
-   * [Banco de pruebas](#5-banco-de-pruebas)
+   * [Activación de .htaccess](#activacion-de-htaccess)
+   * [Creación del archivo .htpasswd](#creacion-del-archivo-htpasswd)
+   * [Configuración del archivo .htaccess](#configuracion-del-archivo-htaccess)
+   * [Reinicio del servicio Apache](#reinicio-del-servicio-apache)
+   * [Banco de pruebas](#banco-de-pruebas)
 
-6. 📊 **Resultados y valoración**
+6. 📊 Resultados y valoración
 
-   * [Resultados obtenidos](#1-resultados-obtenidos)
-   * [Valoración técnica](#2-valoracion-tecnica)
-   * [Valoración personal](#3-valoracion-personal)
+   * [Resultados obtenidos](#resultados-obtenidos)
+   * [Valoración técnica](#valoracion-tecnica)
+   * [Valoración personal](#valoracion-personal)
 
-7. 🧩 **Conclusión**
+7. 🧩 Conclusión
 
-8. 📚 **Bibliografía**
+8. 📚 Bibliografía
 
 ---
 
