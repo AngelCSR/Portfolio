@@ -1,6 +1,5 @@
-# Diario de Aprendizaje: Apache 2 y HTTPS
 
-## Reflexión sobre la Unidad: Instalación y Configuración de Apache 2 y HTTPS en Ubuntu 24.04
+
 
 ### Qué he aprendido
 
