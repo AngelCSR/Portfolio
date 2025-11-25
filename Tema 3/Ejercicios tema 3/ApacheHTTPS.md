@@ -77,7 +77,8 @@ Esta instalado, por lo que solo comprobamos:
 ### 3.3 Generación de certificado SSL/TLS
 
 #### Opción A: Autofirmado
-Al ser para pruebas en clase vamos a utilizar est
+Al ser para pruebas en clase vamos a utilizar estp
+
     sudo mkdir -p /etc/apache2/ssl
     sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/server.key -out /etc/apache2/ssl/server.crt
 ![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/captura3.png)
