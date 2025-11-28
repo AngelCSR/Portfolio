@@ -98,7 +98,7 @@ sudo apt upgrade -y
 sudo apt install apache2 -y
 ```
 
-###  3. Verificar la instalación
+### 3. Verificar la instalación
 Para comprobar que el servicio está activo y en ejecución:
 ```bash
 hostname -I
@@ -108,7 +108,7 @@ hostname -I
 Y acceder a `http://localhost` para confirmar la página de bienvenida.
 ![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto2.png)
 
-###  4. Configurar el usuario y grupo de Apache
+### 4. Configurar el usuario y grupo de Apache
 ```bash
 sudo nano /etc/apache2/envvars
 ```
@@ -131,7 +131,7 @@ Contenido:
 </Directory>
 ```
 
-###  6. Habilitar módulos de Apache
+### 6. Habilitar módulos de Apache
 ```bash
 sudo a2enmod headers
 sudo a2enmod rewrite
@@ -142,12 +142,12 @@ sudo a2enmod rewrite
 sudo chown -R $USER:$USER /var/www/html
 ```
 
-###  8. Reiniciar Apache
+### 8. Reiniciar Apache
 ```bash
 sudo systemctl restart apache2
 ```
 
-### 🔸 9. Comprobación Apache
+### 9. Comprobación Apache
 ```bash
 sudo systemctl status apache2
 ```
@@ -155,7 +155,7 @@ sudo systemctl status apache2
 
 ---
 
-##  2. Creación de una página web personalizada
+## 2. Creación de una página web personalizada
 
 1. Accedemos al directorio raíz:
 ```bash
@@ -224,7 +224,7 @@ Si todo está correcto, se mostrará la página personalizada.
 
 
 
-##  3. Configuración de un Virtual Host
+## 3. Configuración de un Virtual Host
 
 1. Accedemos al directorio:
 ```bash
@@ -261,7 +261,7 @@ sudo chown -R angel:angel /var/www/gci
 ---
 
 
-##  4. Activación del archivo VirtualHost
+## 4. Activación del archivo VirtualHost
 
 ```bash
 sudo a2ensite gci.conf
@@ -308,7 +308,7 @@ Funciona!
 ![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/fotogit.png)
 
 
-##  5. Implementación adicional: Control de acceso
+## 5. Implementación adicional: Control de acceso
 
 1. Crear archivo de contraseñas:
 ```bash
@@ -344,7 +344,7 @@ sudo tail -f /var/log/apache2/error.log
 ![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto12.png)
 ![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%203/imagenes/foto13.png)
 
-##  6. Resultados y valoración
+## 6. Resultados y valoración
 
 **Resultados obtenidos:**
 - Apache 2 instalado correctamente.  
@@ -362,7 +362,7 @@ La parte de seguridad fue especialmente interesante.
 
 ---
 
-##  7. Conclusión
+## 7. Conclusión
 
 Apache es una herramienta esencial en el desarrollo web.  
 Su instalación en Ubuntu 24.04 permite entender conceptos clave de administración de servidores, permisos, y despliegue de sitios web.  
@@ -370,7 +370,7 @@ Esta práctica refuerza la importancia del software libre en la formación técn
 
 ---
 
-##  8. Bibliografía
+## 8. Bibliografía
 
 - [Ubuntu Tutorials – Install and Configure Apache](https://ubuntu.com/tutorials/install-and-configure-apache)  
 - [Apache HTTP Server Documentation](https://httpd.apache.org/docs/)  
