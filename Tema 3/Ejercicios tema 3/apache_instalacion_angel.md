@@ -1,7 +1,5 @@
 # 🏫 Instalación y Configuración de Apache 2 en Ubuntu 24.04
 
-# 🏫 Instalación y Configuración de Apache 2 en Ubuntu 24.04
-
 ## 📑 ÍNDICE
 
 1. 🏫 Introducción
@@ -23,27 +21,25 @@
 
 3. 🌐 Creación de una página web personalizada
 
-   * [Eliminación de la página predeterminada](#eliminación-de-la-página-predeterminada)
-   * [Creación del nuevo archivo index.html](#creación-del-nuevo-archivo-indexhtml)
-   * [Prueba en el navegador](#prueba-en-el-navegador)
+   * [Accedemos al directorio raíz](#accedemos-al-directorio-raíz)
+   * [Eliminamos el archivo de ejemplo](#eliminamos-el-archivo-de-ejemplo)
+   * [Creamos nuestro propio index.html](#creamos-nuestro-propio-indexhtml)
+   * [Contenido personalizado](#contenido-personalizado)
+   * [Prueba en el navegador](#si-todo-está-correcto-se-mostrará-la-página-personalizada)
 
 4. 🧩 Configuración de un Virtual Host
 
-   * [Acceso al directorio de configuración](#acceso-al-directorio-de-configuración)
-   * [Copia de la configuración por defecto](#copia-de-la-configuración-por-defecto)
-   * [Creación del archivo miweb.local.conf](#creación-del-archivo-miweblocalconf)
-   * [Definición de directivas (ServerAdmin, DocumentRoot, ServerName)](#definición-de-directivas-serveradmin-documentroot-servername)
-   * [Activación del Virtual Host](#activación-del-virtual-host)
-   * [Modificación del archivo /etc/hosts](#modificación-del-archivo-etchosts)
-   * [Pruebas de acceso](#pruebas-de-acceso)
+   * [Accedemos al directorio](#accedemos-al-directorio)
+   * [Copiamos la configuración base](#copiamos-la-configuración-base)
+   * [Editamos el nuevo archivo](#editamos-el-nuevo-archivo)
+   * [Creamos el directorio raíz](#creamos-el-directorio-raíz)
 
 5. 🔐 Implementación adicional: Control de acceso
 
-   * [Activación de .htaccess](#activación-de-htaccess)
-   * [Creación del archivo .htpasswd](#creación-del-archivo-htpasswd)
-   * [Configuración del archivo .htaccess](#configuración-del-archivo-htaccess)
-   * [Reinicio del servicio Apache](#reinicio-del-servicio-apache)
-   * [Banco de pruebas](#banco-de-pruebas)
+   * [Crear archivo de contraseñas](#crear-archivo-de-contraseñas)
+   * [En /var/www/gci crear .htaccess](#en-varwwwgci-crear-htaccess)
+   * [Reiniciar Apache](#reiniciar-apache)
+   * [Probar el acceso desde otro equipo en la red](#probar-el-acceso-desde-otro-equipo-en-la-red)
 
 6. 📊 Resultados y valoración
 
