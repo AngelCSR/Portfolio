@@ -3,51 +3,45 @@
 ## 📑 ÍNDICE
 
 1. 🏫 Introducción
-
    * [Contexto](#contexto)
-   * [Motivación](#motivacion)
+   * [Motivación](#motivación)
 
 2. ⚙️ Configuración inicial del servidor
-
-   * [1 Actualizar el sistema](#1-actualizar-el-sistema)
-   * [2 Instalar Apache 2](#2-instalar-apache-2)
-   * [3 Verificar la instalación](#3-verificar-la-instalacion)
-   * [4 Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
-   * [5 Configurar el directorio raíz](#5-configurar-el-directorio-raiz)
-   * [6 Habilitar módulos de Apache](#6-habilitar-modulos-de-apache)
-   * [7 Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
-   * [8 Reiniciar Apache](#8-reiniciar-apache)
-   * [9 Comprobación Apache](#9-comprobacion-apache)
+   * [1. Actualizar el sistema](#1-actualizar-el-sistema)
+   * [2. Instalar Apache 2](#2-instalar-apache-2)
+   * [3. Verificar la instalación](#3-verificar-la-instalación)
+   * [4. Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
+   * [5. Configurar el directorio raíz](#5-configurar-el-directorio-raíz)
+   * [6. Habilitar módulos de Apache](#6-habilitar-módulos-de-apache)
+   * [7. Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
+   * [8. Reiniciar Apache](#8-reiniciar-apache)
+   * [9. Comprobación Apache](#9-comprobación-apache)
 
 3. 🌐 Creación de una página web personalizada
-
-   * [Eliminación de la página predeterminada](#eliminacion-de-la-pagina-predeterminada)
-   * [Creación del nuevo archivo index.html](#creacion-del-nuevo-archivo-indexhtml)
-   * [Prueba en el navegador](#prueba-en-el-navegador)
+   * [Acceder al directorio raíz](#accedemos-al-directorio-raíz)
+   * [Eliminación de la página predeterminada](#eliminación-de-la-página-predeterminada)
+   * [Creación del nuevo index.html](#creamos-nuestro-propio-indexhtml)
+   * [Prueba en el navegador](#si-todo-está-correcto-se-mostrará-la-página-personalizada)
 
 4. 🧩 Configuración de un Virtual Host
-
-   * [Acceso al directorio de configuración](#acceso-al-directorio-de-configuracion)
-   * [Copia de la configuración por defecto](#copia-de-la-configuracion-por-defecto)
-   * [Creación del archivo miweb.local.conf](#creacion-del-archivo-miweblocalconf)
-   * [Definición de directivas (ServerAdmin, DocumentRoot, ServerName)](#definicion-de-directivas-serveradmin-documentroot-servername)
-   * [Activación del Virtual Host](#activacion-del-virtual-host)
-   * [Modificación del archivo /etc/hosts](#modificacion-del-archivo-etchosts)
-   * [Pruebas de acceso](#pruebas-de-acceso)
+   * [Acceso al directorio de configuración](#accedemos-al-directorio)
+   * [Copia de la configuración por defecto](#copiamos-la-configuración-base)
+   * [Creación del archivo gci.conf](#editamos-el-nuevo-archivo)
+   * [Definición de directivas](#configuramos)
+   * [Creación del directorio raíz](#creamos-el-directorio-raíz)
+   * [Activación del Virtual Host](#4-activación-del-archivo-virtualhost)
+   * [Modificación de /etc/hosts](#editamos-etchosts)
 
 5. 🔐 Implementación adicional: Control de acceso
-
-   * [Activación de .htaccess](#activacion-de-htaccess)
-   * [Creación del archivo .htpasswd](#creacion-del-archivo-htpasswd)
-   * [Configuración del archivo .htaccess](#configuracion-del-archivo-htaccess)
-   * [Reinicio del servicio Apache](#reinicio-del-servicio-apache)
-   * [Banco de pruebas](#banco-de-pruebas)
+   * [Creación del archivo .htpasswd](#crear-archivo-de-contraseñas)
+   * [Configuración del archivo .htaccess](#en-varwwwgci-crear-htaccess)
+   * [Reinicio del servicio Apache](#reiniciar-apache)
+   * [Banco de pruebas](#probar-el-acceso-desde-otro-equipo-en-la-red)
 
 6. 📊 Resultados y valoración
-
    * [Resultados obtenidos](#resultados-obtenidos)
-   * [Valoración técnica](#valoracion-tecnica)
-   * [Valoración personal](#valoracion-personal)
+   * [Valoración técnica](#valoración-técnica)
+   * [Valoración personal](#valoración-personal)
 
 7. 🧩 Conclusión
 
