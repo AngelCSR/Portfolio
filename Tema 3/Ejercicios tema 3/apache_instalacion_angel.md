@@ -57,7 +57,7 @@
 
 ## 🏫 Introducción
 
-### 📍 Contexto
+### Contexto
 
 Este trabajo se realiza en el módulo de **Despliegue de Aplicaciones Web** del segundo curso del ciclo formativo de **Desarrollo de Aplicaciones Web (2º DAW)**.  
 El objetivo de la práctica es instalar y configurar el servidor web **Apache 2** en un sistema operativo **Ubuntu 24.04**, comprendiendo su funcionamiento y los pasos necesarios para dejarlo operativo.
@@ -75,7 +75,7 @@ Surgió en 1995 y sigue siendo una pieza clave en la infraestructura de Internet
 - **Caddy:** moderno y con HTTPS automático.  
 - **IIS (Microsoft):** integrado en Windows Server.
 
-### 🎯 Motivación
+### Motivación
 
 El propósito de este proyecto es aprender el proceso completo de **instalación, configuración y verificación de un servidor web real**, utilizando Apache como ejemplo.  
 Comprender cómo se despliega y configura un servicio HTTP es esencial para el perfil profesional del desarrollador web, ya que permite **publicar aplicaciones, probar proyectos en entorno real y gestionar servidores Linux**.
@@ -86,7 +86,7 @@ Comprender cómo se despliega y configura un servicio HTTP es esencial para el p
 
 Durante la práctica se siguieron los pasos descritos a continuación, para instalar y poner en marcha Apache 2 en Ubuntu 24.04:
 
-#1.-Actualizar-el-sistema
+
 ### 1. Actualizar el sistema
 ```bash
 sudo apt update
