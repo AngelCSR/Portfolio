@@ -1,53 +1,60 @@
 # 🏫 Instalación y Configuración de Apache 2 en Ubuntu 24.04
 
+# 🏫 Instalación y Configuración de Apache 2 en Ubuntu 24.04
+
 ## 📑 ÍNDICE
 
-### 🏫 Introducción
-- [Contexto](#contexto)
-- [¿Qué es Apache?](#qué-es-apache)
-- [Motivación](#motivación)
+1. 🏫 Introducción
 
-### ⚙️ 1. Configuración inicial del servidor
-- [1. Actualizar el sistema](#1-actualizar-el-sistema)
-- [2. Instalar Apache 2](#2-instalar-apache-2)
-- [3. Verificar la instalación](#3-verificar-la-instalación)
-- [4. Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
-- [5. Configurar el directorio raíz](#5-configurar-el-directorio-raíz)
-- [6. Habilitar módulos de Apache](#6-habilitar-módulos-de-apache)
-- [7. Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
-- [8. Reiniciar Apache](#8-reiniciar-apache)
-- [9. Comprobación Apache](#9-comprobación-apache)
+   * [Contexto](#contexto)
+   * [Motivación](#motivación)
 
-### 🌐 2. Creación de una página web personalizada
-- [Accedemos al directorio raíz](#accedemos-al-directorio-raíz)
-- [Eliminamos el archivo de ejemplo](#eliminamos-el-archivo-de-ejemplo)
-- [Creamos nuestro propio index.html](#creamos-nuestro-propio-indexhtml)
-- [Contenido personalizado](#contenido-personalizado)
-- [Si todo está correcto, se mostrará la página personalizada](#si-todo-está-correcto-se-mostrará-la-página-personalizada)
+2. ⚙️ Configuración inicial del servidor
 
-### 🧩 3. Configuración de un Virtual Host
-- [Accedemos al directorio](#accedemos-al-directorio)
-- [Copiamos la configuración base](#copiamos-la-configuración-base)
-- [Editamos el nuevo archivo](#editamos-el-nuevo-archivo)
-- [Creamos el directorio raíz](#creamos-el-directorio-raíz)
+   * [1 Actualizar el sistema](#1-actualizar-el-sistema)
+   * [2 Instalar Apache 2](#2-instalar-apache-2)
+   * [3 Verificar la instalación](#3-verificar-la-instalación)
+   * [4 Configurar el usuario y grupo de Apache](#4-configurar-el-usuario-y-grupo-de-apache)
+   * [5 Configurar el directorio raíz](#5-configurar-el-directorio-raíz)
+   * [6 Habilitar módulos de Apache](#6-habilitar-módulos-de-apache)
+   * [7 Establecer permisos del directorio](#7-establecer-permisos-del-directorio)
+   * [8 Reiniciar Apache](#8-reiniciar-apache)
+   * [9 Comprobación Apache](#9-comprobación-apache)
 
-### 🧩 4. Activación del archivo VirtualHost
-- [sudo a2ensite gci.conf](#4-activación-del-archivo-virtualhost)
-- [Editamos /etc/hosts](#editamos-etchosts)
+3. 🌐 Creación de una página web personalizada
 
-### 🔐 5. Implementación adicional: Control de acceso
-- [Crear archivo de contraseñas](#crear-archivo-de-contraseñas)
-- [En /var/www/gci crear .htaccess](#en-varwwwgci-crear-htaccess)
-- [Reiniciar Apache](#reiniciar-apache)
-- [Probar el acceso desde otro equipo en la red](#probar-el-acceso-desde-otro-equipo-en-la-red)
+   * [Eliminación de la página predeterminada](#eliminación-de-la-página-predeterminada)
+   * [Creación del nuevo archivo index.html](#creación-del-nuevo-archivo-indexhtml)
+   * [Prueba en el navegador](#prueba-en-el-navegador)
 
-### 📊 6. Resultados y valoración
-- [Resultados obtenidos](#resultados-obtenidos)
-- [Valoración técnica](#valoración-técnica)
-- [Valoración personal](#valoración-personal)
+4. 🧩 Configuración de un Virtual Host
 
-### 🧩 7. Conclusión
-### 📚 8. Bibliografía
+   * [Acceso al directorio de configuración](#acceso-al-directorio-de-configuración)
+   * [Copia de la configuración por defecto](#copia-de-la-configuración-por-defecto)
+   * [Creación del archivo miweb.local.conf](#creación-del-archivo-miweblocalconf)
+   * [Definición de directivas (ServerAdmin, DocumentRoot, ServerName)](#definición-de-directivas-serveradmin-documentroot-servername)
+   * [Activación del Virtual Host](#activación-del-virtual-host)
+   * [Modificación del archivo /etc/hosts](#modificación-del-archivo-etchosts)
+   * [Pruebas de acceso](#pruebas-de-acceso)
+
+5. 🔐 Implementación adicional: Control de acceso
+
+   * [Activación de .htaccess](#activación-de-htaccess)
+   * [Creación del archivo .htpasswd](#creación-del-archivo-htpasswd)
+   * [Configuración del archivo .htaccess](#configuración-del-archivo-htaccess)
+   * [Reinicio del servicio Apache](#reinicio-del-servicio-apache)
+   * [Banco de pruebas](#banco-de-pruebas)
+
+6. 📊 Resultados y valoración
+
+   * [Resultados obtenidos](#resultados-obtenidos)
+   * [Valoración técnica](#valoración-técnica)
+   * [Valoración personal](#valoración-personal)
+
+7. 🧩 Conclusión
+
+8. 📚 Bibliografía
+
 
 
 ---
