@@ -86,7 +86,8 @@ Comprender cómo se despliega y configura un servicio HTTP es esencial para el p
 
 Durante la práctica se siguieron los pasos descritos a continuación, para instalar y poner en marcha Apache 2 en Ubuntu 24.04:
 
-### 🔸 1. Actualizar el sistema
+#1.-Actualizar-el-sistema
+### 1. Actualizar el sistema
 ```bash
 sudo apt update
 sudo apt upgrade -y
