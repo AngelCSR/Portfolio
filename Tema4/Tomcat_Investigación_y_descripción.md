@@ -1,5 +1,7 @@
 # Tomcat: Investigación y descripción
 
+**Tomcat no es solo un servidor web, sino un contenedor de servlets totalmente funcional compuesto por varios módulos especializados. Cada uno cumple una función específica para recibir peticiones, procesarlas y generar respuestas dinámicas.**
+
 ## Catalina
 Catalina es el **contenedor de servlets** de Tomcat; es el corazón del servidor donde se ejecutan las aplicaciones web Java (servlets y JSP). Gestiona ciclos de vida, seguridad, sesiones y despliegue. Se define y configura mediante los archivos de la carpeta **conf/**, especialmente **server.xml**. Es responsable del funcionamiento interno de los contenedores (**Engine**, **Host**, **Context**) que organizan las aplicaciones.
 
