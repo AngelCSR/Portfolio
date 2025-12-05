@@ -7,7 +7,10 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - `/opt/tomcat/latest/conf/server.xml` → `server.xml`  
 - `/opt/tomcat/latest/conf/web.xml` → `web.xml`  
 - `/opt/tomcat/latest/conf/tomcat-users.xml` → `tomcat-users.xml`  
-- `/opt/tomcat/latest/conf/context.xml` → `context.xml`  
+- `/opt/tomcat/latest/conf/context.xml` → `context.xml`
+  
+![captura]()
+
 
 ## 2️⃣ Función y configuración de cada archivo
 
@@ -22,9 +25,78 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - **Servicios y motores (Service, Engine):** configuración global de la instancia  
 - **Valves y recursos:** logs, seguridad, etc.  
 
-**Ejemplo de elemento:**
+![captura]()
 
-```xml
-<Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />
-<Host name="localhost" appBase="webapps" unpackWARs="true" autoDeploy="true" />
+### b) web.xml
+
+**Función:**Configuración global de aplicaciones web; actúa como el descriptor estándar para todas las aplicaciones.  
+
+**Qué se configura:**
+
+- **Servlets y filtros globales**  
+- **Parámetros de contexto**
+- **Manejo de errores y seguridad **
+
+![captura]()
+
+### c)tomcat-users.xml
+
+**Función:**Define usuarios y roles para acceso a la administración y paneles de Tomcat. 
+
+**Qué se configura:**
+
+- **Usuarios (user):** nombre, contraseña y roles  
+- **Roles (role):** como manager-gui, admin-gui, etc.
+
+![captura]()
+
+### d)context.xml
+
+**Función:**Define la configuración del contexto de la aplicación, es decir, cada aplicación desplegada.
+
+**Qué se configura:**
+
+- **Recursos JNDI:** bases de datos, conexiones, etc.
+- **Sesiones y parámetros de contexto.**
+- **Seguridad y control de acceso por aplicación**
+  
+![captura]()
+
+## 3️⃣ Mapa visual de dependencias
+
+```text
+               +----------------+
+               |   server.xml   |
+               |  (config global)|
+               +--------+-------+
+                        |
+         +--------------+----------------+
+         |                               |
+   +-----v-----+                   +-----v-----+
+   |   web.xml |                   | context.xml|
+   | (global   |                   |(app-level)|
+   |  servlets)|                   |  context) |
+   +-----------+                   +-----------+
+                        |
+                        v
+               +----------------+
+               | tomcat-users.xml|
+               |  (usuarios/roles)|
+               +----------------+
+```
+### Explicación del flujo:
+
+- **server.xml**→ define el motor, hosts y conectores globales 
+- **web.xml**→ aplica reglas globales a todas las aplicaciones
+- **context.xml** → personaliza cada aplicación (puede sobreescribir web.xml)
+- **tomcat-users.xml** → controla acceso a paneles y administración, usado por Tomcat cuando se autentica
+
+ 
+
+ 
+
+
+
+
+
 
