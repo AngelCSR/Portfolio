@@ -9,7 +9,7 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - `/opt/tomcat/latest/conf/tomcat-users.xml` → `tomcat-users.xml`  
 - `/opt/tomcat/latest/conf/context.xml` → `context.xml`
   
-![captura]()
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/identificacionConf/foto1.png)
 
 
 ## 2️⃣ Función y configuración de cada archivo
@@ -25,7 +25,7 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - **Servicios y motores (Service, Engine):** configuración global de la instancia  
 - **Valves y recursos:** logs, seguridad, etc.  
 
-![captura]()
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/identificacionConf/foto2.png)
 
 ### b) web.xml
 
@@ -37,7 +37,7 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - **Parámetros de contexto**
 - **Manejo de errores y seguridad **
 
-![captura]()
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/identificacionConf/foto3.png)
 
 ### c)tomcat-users.xml
 
@@ -48,7 +48,7 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - **Usuarios (user):** nombre, contraseña y roles  
 - **Roles (role):** como manager-gui, admin-gui, etc.
 
-![captura]()
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/identificacionConf/foto4.png)
 
 ### d)context.xml
 
@@ -60,7 +60,7 @@ En nuestra instalación (`/opt/tomcat/latest`), los archivos se encuentran en:
 - **Sesiones y parámetros de contexto.**
 - **Seguridad y control de acceso por aplicación**
   
-![captura]()
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/identificacionConf/foto5.png)
 
 ## 3️⃣ Mapa visual de dependencias
 
