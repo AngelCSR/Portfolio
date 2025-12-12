@@ -7,7 +7,7 @@
 ``` bash
 sudo a2enmod proxy
 sudo a2enmod proxy_http
-sudo a2enmod proxy_ajp   # opcional, solo si se desea usar AJP
+sudo a2enmod proxy_ajp   # opcional, solo si se  usa AJP, en este caso no hace falta
 sudo systemctl restart apache2
 ```
 ![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat_Integraci%C3%B3nTomcat%2BServidorweb/Activar_m%C3%B3dulos_necesarios.png)
