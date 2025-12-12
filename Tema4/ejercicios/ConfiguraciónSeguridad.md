@@ -66,7 +66,7 @@ Asegurarse de que existan bloques como:
 sudo keytool -genkey -alias tomcat -keyalg RSA -keystore /opt/tomcat/latest/conf/keystore.jks -validity 3650
 ```
 
-* Contraseña: `angel`
+* Contraseña: `angel24`
 * Completar datos de la organización (puedes usar defaults o locales).
 
 Resultado: `/opt/tomcat/latest/conf/keystore.jks`
