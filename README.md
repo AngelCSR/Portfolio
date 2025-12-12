@@ -1,6 +1,6 @@
 # Portfolio
 
- En este repositorio vamos a ver progreso realizado durante el curso 
+ En este repositorio vamos a ver el progreso realizado durante el curso 
  
 ## Ejercicios
 * Tema 1
