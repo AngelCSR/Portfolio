@@ -6,7 +6,7 @@
 ```
 ab -n 1000 -c 20 http://localhost/sample/
 ```
-_Foto 1_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto1.png)
 
 | Métrica                | Valor          |
 |-----------------------|----------------|
@@ -23,7 +23,8 @@ _Foto 1_
 ```
 ab -n 3000 -c 100 http://localhost/sample/
 ```
-_Foto 2_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto2.png)
+
 
 | Métrica                | Valor          |
 |-----------------------|----------------|
@@ -40,7 +41,8 @@ _Foto 2_
 ```
 ab -n 5000 -c 200 http://localhost/sample/
 ```
-_Foto 3_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto3.png)
+
 
 | Métrica                | Valor          |
 |-----------------------|----------------|
@@ -71,7 +73,7 @@ Modificación aplicada al conector:
     keepAliveTimeout="15000"
     maxKeepAliveRequests="100" />
 ```
-_Foto 4_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto4.png)
 
 Reiniciamos Tomcat:
 ```
@@ -83,7 +85,7 @@ sudo systemctl restart tomcat
 ## 3. REPETICIÓN DE PRUEBAS Y TABLA COMPARATIVA
 
 ### PRUEBA 1 – 1000 peticiones, concurrencia 20
-_Foto 5_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto5.png)
 
 | Métrica                | Antes        | Después      |
 |-----------------------|--------------|--------------|
@@ -96,7 +98,7 @@ _Foto 5_
 ---
 
 ### PRUEBA 2 – 3000 peticiones, concurrencia 100
-_Foto 6_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto6.png)
 
 | Métrica                | Antes        | Después      |
 |-----------------------|--------------|--------------|
@@ -109,7 +111,7 @@ _Foto 6_
 ---
 
 ### PRUEBA 3 – 5000 peticiones, concurrencia 200
-_Foto 7_
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-Pruebas-de-funcionamiento-y-rendimiento/foto7.png)
 
 | Métrica                | Antes        | Después      |
 |-----------------------|--------------|--------------|
