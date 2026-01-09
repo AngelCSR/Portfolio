@@ -26,7 +26,7 @@ ls ~/myapp
 sample.war
 ```
 
-![captura]()
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema4/imagenes/Tomcat-en-contenedores/foto1.png)
 
 ---
 
