@@ -90,3 +90,7 @@ Un pequeño resumen de los conceptos clave
 ---
 
 **Nota:** El puerto de control siempre es el 21 (FTP estándar).
+
+
+
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/Actividad%201/foto1.png)
