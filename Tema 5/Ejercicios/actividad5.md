@@ -90,6 +90,7 @@ ftp> put prueba.txt   # Subir archivo (verificar permisos)
 ```
 
 ---
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/Actividad%205/foto1.png)
 
 ## 5️⃣ Tabla comparativa Modo Activo vs Modo Pasivo
 
