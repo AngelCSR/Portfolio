@@ -69,13 +69,19 @@ En la pantalla de inicio de sesión introduje:
 El resultado fue:
 
     230 Login successful.
+    
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad%204/foto1.png)
 
 Una vez dentro, ejecuté `ls` y pude listar el contenido del directorio
 asignado.\
 Tal como estaba previsto, el servidor solo me permitió leer y no
-escribir, ya que al intentar subir un archivo obtuve:
+escribir, ya que al intentar subir un archivo, que habia creado obtuve:
 
     550 Permission denied.
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad%204/foto3.png)
+
+
+
 
 Esto confirma que el acceso anónimo funciona correctamente, está
 restringido al directorio asignado y únicamente tiene permisos de
