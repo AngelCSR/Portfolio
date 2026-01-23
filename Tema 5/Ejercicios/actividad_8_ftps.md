@@ -77,6 +77,8 @@ Configuración en FileZilla:
 | Usuario | angel |
 | Contraseña | (contraseña de angel) |
 
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad8/foto1.png)
+
 Resultado esperado:
 
 ```
@@ -86,6 +88,7 @@ Estado: Conexión TLS establecida
 - Indica que la conexión es **cifrada y segura**.
 
 ---
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad8/foto2.png)
 
 ## 4. Intento de conexión insegura (FTP sin TLS)
 
@@ -96,6 +99,7 @@ Error: Se ha recibido una alerta TLS del servidor: Error de decodificación (50)
 Error: No se pudo leer desde el socket: ECONNABORTED - Conexión abortada
 Error: Desconectado del servidor
 ```
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad8/foto4.png)
 
 - Esto ocurre porque el servidor tiene activadas las opciones:
 
@@ -113,6 +117,7 @@ Desde terminal usando `ftp` también se muestra:
 530 Non-anonymous sessions must use encryption.
 ftp: Login failed
 ```
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad8/foto3.png)
 
 ✅ Esto confirma que **FTP inseguro está bloqueado** y **FTPS explícito funciona correctamente**.
 
@@ -129,9 +134,4 @@ ftp: Login failed
 
 ---
 
-**Capturas recomendadas para entregar:**
-
-1. FileZilla mostrando `Estado: Conexión TLS establecida`.  
-2. FileZilla mostrando error de conexión al intentar FTP inseguro (`ECONNABORTED`).  
-3. Terminal mostrando `530 Non-anonymous sessions must use encryption` para FTP inseguro.
 
