@@ -10,7 +10,7 @@ ftp://127.0.0.1:2121
 
 Resultado mostrado en la captura:
 
-![Captura navegador FTP](sandbox:/mnt/data/ff7cb550-dfe1-4f51-815c-c5d362952062.png)
+![Captura navegador FTP](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad9/foto1.png)
 
 Mensaje del navegador:
 
