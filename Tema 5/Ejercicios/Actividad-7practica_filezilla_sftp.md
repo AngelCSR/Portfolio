@@ -58,9 +58,13 @@ Esto permite verificar que todo el proceso se realizó sin errores.
 
 ## 4️⃣ Captura de pantalla
 
-La captura de pantalla incluida en la entrega muestra:
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad7/foto1.png)
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad7/foto2.png)
+![captura](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad7/foto3.png)
 
-- Nombre del sitio: **SFTP ftpuser1 (localhost)**.
+Las capturas de pantalla incluidas muestran:
+
+- Nombre del sitio: **SFTP ftpuser1@localhost**.
 - Archivos visibles en **ambos paneles**: angel (local) y ftpuser1/subidas (remoto).
 - Cola de transferencias mostrando éxito.
 - Mensajes de estado indicando **Transferencia completada**.
