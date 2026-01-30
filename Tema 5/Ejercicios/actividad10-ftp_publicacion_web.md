@@ -140,6 +140,8 @@ http://127.0.0.1/index.html
 ```
 
 Se debe mostrar la página HTML subida.
+![Captura navegador FTP](https://github.com/AngelCSR/Portfolio/blob/main/Tema%205/Imagenes/actividad10/foto3.png)
+
 
 ---
 
